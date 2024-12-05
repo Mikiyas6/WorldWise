@@ -34,6 +34,10 @@
   font-size: 3.2rem;
   line-height: 1;
 }
+.city img {
+  width: 64px;
+  height: 40px;
+}
 
 .city p {
   font-size: 1.6rem;
