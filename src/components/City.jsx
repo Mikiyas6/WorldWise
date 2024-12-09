@@ -2,7 +2,7 @@
 import styles from "./City.module.css";
 
 import { useParams, useSearchParams } from "react-router-dom";
-
+import { useCities } from "../contexts/CitiesContext";
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
     day: "numeric",
@@ -11,11 +11,12 @@ const formatDate = (date) =>
     weekday: "long",
   }).format(new Date(date));
 
-function City({ cities }) {
+function City() {
   const [searchParams, setSearchParams] = useSearchParams();
   const lat = searchParams.get("lat");
   const lng = searchParams.get("lng");
   const { id } = useParams();
+  const { cities } = useCities();
   const currentCity = cities.filter((city) => city.id == id);
   const { cityName, emoji, date, notes } = currentCity[0];
   return (
