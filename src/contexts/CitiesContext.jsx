@@ -13,7 +13,7 @@ function CitiesProvider({ children }) {
     try {
       const res = await fetch(`${BIG_URL}${data.country}`);
       const newData = await res.json();
-      return newData[0].flags.png;
+      return newData[0].flags.svg;
     } catch (err) {
       throw new Error(`${err.message} (Error getting flag of the country)`);
     }
