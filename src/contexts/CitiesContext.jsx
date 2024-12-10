@@ -7,6 +7,7 @@ function CitiesProvider({ children }) {
   // All the state and state updating code
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [currentCity, setCurrentCity] = useState(null);
   // ########################################
   async function getFlag(data) {
     try {
@@ -43,6 +44,10 @@ function CitiesProvider({ children }) {
   const value = {
     cities,
     isLoading,
+    setIsLoading,
+    getFlag,
+    currentCity,
+    setCurrentCity,
   };
   // ########################################
   return (
