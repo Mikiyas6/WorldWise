@@ -37,9 +37,25 @@ function CitiesProvider({ children }) {
         setIsLoading(false);
       }
     }
-
     fetchCities();
   }, []);
+  async function createCity(newCity) {
+    try {
+      setIsLoading(true);
+      const res = await fetch(`${URL}/cities`, {
+        method: "POST",
+        body: JSON.stringify(newCity),
+        headers: { "Content-Type": "application/json" },
+      });
+      const data = await res.json();
+      console.log(data);
+      setCities((cities) => [...cities, data]);
+    } catch (err) {
+      throw new Error(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  }
   // ########################################
   const value = {
     cities,
@@ -48,6 +64,7 @@ function CitiesProvider({ children }) {
     getFlag,
     currentCity,
     setCurrentCity,
+    createCity,
   };
   // ########################################
   return (

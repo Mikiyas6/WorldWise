@@ -10,7 +10,7 @@
         "lat": 38.727881642324164,
         "lng": -9.140900099907554
       },
-      "id": 73930385
+      "id": "73930385"
     },
     {
       "cityName": "Madrid",
@@ -22,7 +22,7 @@
         "lat": 40.46635901755316,
         "lng": -3.7133789062500004
       },
-      "id": 17806751
+      "id": "17806751"
     },
     {
       "cityName": "Berlin",
@@ -34,7 +34,175 @@
         "lat": 52.53586782505711,
         "lng": 13.376933665713324
       },
-      "id": 98443197
+      "id": "98443197"
+    },
+    {
+      "id": "87d1",
+      "cityName": "l'Alcora",
+      "country": "Spain",
+      "emoji": "https://flagcdn.com/es.svg",
+      "date": "2024-12-12T12:01:48.195Z",
+      "notes": "",
+      "position": {
+        "lat": "40.11817260537477",
+        "lng": "-0.21972656250000003"
+      }
+    },
+    {
+      "id": "3ec2",
+      "cityName": "Foggaret Ezzaou",
+      "country": "Algeria",
+      "emoji": "https://flagcdn.com/dz.svg",
+      "date": "2024-12-12T12:02:21.777Z",
+      "notes": "Goddamn",
+      "position": {
+        "lat": "27.86044224275771",
+        "lng": "4.570312500000001"
+      }
+    },
+    {
+      "id": "0751",
+      "cityName": "Tamanghasset",
+      "country": "Algeria",
+      "emoji": "https://flagcdn.com/dz.svg",
+      "date": "2024-12-12T12:04:20.844Z",
+      "notes": "asdf",
+      "position": {
+        "lat": "21.633045843641856",
+        "lng": "5.097656250000001"
+      }
+    },
+    {
+      "id": "004b",
+      "cityName": "Onda",
+      "country": "Spain",
+      "emoji": "https://flagcdn.com/es.svg",
+      "date": "2024-12-12T12:04:49.185Z",
+      "notes": "sdfaaaaaaaaaaaaaaaaaaaaaaaa",
+      "position": {
+        "lat": "39.96888991521646",
+        "lng": "-0.20050048828125003"
+      }
+    },
+    {
+      "id": "1168",
+      "cityName": "Onda",
+      "country": "Spain",
+      "emoji": "https://flagcdn.com/es.svg",
+      "date": "2024-12-12T12:05:28.858Z",
+      "notes": "dasfsdfadfasdfsdfa",
+      "position": {
+        "lat": "39.96888991521646",
+        "lng": "-0.20050048828125003"
+      }
+    },
+    {
+      "id": "f968",
+      "cityName": "Moghrar",
+      "country": "Algeria",
+      "emoji": "https://flagcdn.com/dz.svg",
+      "date": "2024-12-12T12:09:02.641Z",
+      "notes": "sdfsdfsdf",
+      "position": {
+        "lat": "32.458049278501946",
+        "lng": "-0.39550781250000006"
+      }
+    },
+    {
+      "id": "bdaa",
+      "cityName": "Bouda",
+      "country": "Algeria",
+      "emoji": "https://flagcdn.com/dz.svg",
+      "date": "2024-12-12T12:12:49.246Z",
+      "notes": "Gigi",
+      "position": {
+        "lat": "27.99966662419153",
+        "lng": "-2.6367187500000004"
+      }
+    },
+    {
+      "id": "3b0f",
+      "cityName": "Tindouf",
+      "country": "Algeria",
+      "emoji": "https://flagcdn.com/dz.svg",
+      "date": "2024-12-12T12:15:40.018Z",
+      "notes": "fasdsdfa",
+      "position": {
+        "lat": "27.004118405681123",
+        "lng": "-5.273437500000001"
+      }
+    },
+    {
+      "id": "48bf",
+      "cityName": "El Borma",
+      "country": "Algeria",
+      "emoji": "https://flagcdn.com/dz.svg",
+      "date": "2024-12-12T12:16:54.217Z",
+      "notes": "fffff",
+      "position": {
+        "lat": "31.666494820709662",
+        "lng": "6.679687500000001"
+      }
+    },
+    {
+      "id": "79fe",
+      "cityName": "In Ghar",
+      "country": "Algeria",
+      "emoji": "https://flagcdn.com/dz.svg",
+      "date": "2024-12-12T12:16:54.217Z",
+      "notes": "fffff",
+      "position": {
+        "lat": "26.211190597997632",
+        "lng": "1.8457031250000002"
+      }
+    },
+    {
+      "id": "f02a",
+      "cityName": "Tessalit",
+      "country": "Mali",
+      "emoji": "https://flagcdn.com/ml.svg",
+      "date": "2024-12-12T12:17:30.699Z",
+      "notes": "dfas",
+      "position": {
+        "lat": "19.40712404531674",
+        "lng": "0"
+      }
+    },
+    {
+      "id": "176f",
+      "cityName": "Oyem",
+      "country": "Gabon",
+      "emoji": "https://flagcdn.com/ga.svg",
+      "date": "2024-12-12T12:17:30.699Z",
+      "notes": "dfas",
+      "position": {
+        "lat": "1.2524616351226585",
+        "lng": "12.392578125"
+      }
+    },
+    {
+      "id": "a75a",
+      "cityName": "Faya-Largeau",
+      "country": "Chad",
+      "emoji": "https://flagcdn.com/td.svg",
+      "date": "2024-12-12T12:20:15.225Z",
+      "notes": "tyty",
+      "position": {
+        "lat": "15.808883628040896",
+        "lng": "20.566406250000004"
+      }
+    },
+    {
+      "id": "d468",
+      "cityName": "Fihaonana",
+      "country": "Madagascar",
+      "emoji": "https://flagcdn.com/mg.svg",
+      "date": "2024-12-12T12:20:23.546Z",
+      "notes": "sdfa",
+      "position": {
+        "lat": "-18.544672078303176",
+        "lng": "47.109375"
+      }
     }
   ]
 }
