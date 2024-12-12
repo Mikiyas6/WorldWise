@@ -56,6 +56,22 @@ function CitiesProvider({ children }) {
       setIsLoading(false);
     }
   }
+  async function deleteCity(id) {
+    try {
+      setIsLoading(true);
+      await fetch(`${URL}/cities/${id}`, {
+        method: "DELETE",
+      });
+      setCities((cities) => {
+        return cities.filter((city) => city.id !== id);
+      });
+    } catch (err) {
+      throw new Error(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
   // ########################################
   const value = {
     cities,
@@ -65,6 +81,7 @@ function CitiesProvider({ children }) {
     currentCity,
     setCurrentCity,
     createCity,
+    deleteCity,
   };
   // ########################################
   return (
