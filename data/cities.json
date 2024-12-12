@@ -23,6 +23,18 @@
         "lng": 13.376933665713324
       },
       "id": "98443197"
+    },
+    {
+      "id": "d382",
+      "cityName": "Vilar de Canes",
+      "country": "Spain",
+      "emoji": "https://flagcdn.com/es.svg",
+      "date": "2024-12-12T16:33:19.438Z",
+      "notes": "",
+      "position": {
+        "lat": "40.333983227838104",
+        "lng": "-0.06866455078125001"
+      }
     }
   ]
 }
