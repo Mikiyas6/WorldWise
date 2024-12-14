@@ -9,7 +9,7 @@ function User() {
     logout();
     navigate("/");
   }
-  console.log(user);
+
   if (!isAuthenticated) return;
   return (
     <div className={styles.user}>

@@ -11,6 +11,7 @@ import City from "./components/City";
 import Form from "./components/Form";
 import { CitiesProvider } from "./contexts/CitiesContext";
 import { AuthProvider } from "./contexts/FakeAuthContext";
+import ProtectedRoute from "./pages/ProtectedRoute";
 
 function App() {
   return (
@@ -29,7 +30,14 @@ function App() {
         Without <Outlet>, the parent route cannot display the content of its nested routes. */}
 
             {/* If there are nested routes, The parent Route Usually Displays A layout. Inside of that Layout, There should be a place where we specify Outlet such that The children Routes can display their corresponding React component there. Only one child route is displayed at a time, so it works fine. */}
-            <Route path="app" element={<AppLayout />}>
+            <Route
+              path="app"
+              element={
+                <ProtectedRoute>
+                  <AppLayout />
+                </ProtectedRoute>
+              }
+            >
               {/* As soon as the index route is hit, we're going to be redirected to cities route  */}
               <Route index element={<Navigate replace to="cities" />} />
               <Route path="cities" element={<CityList />} />
