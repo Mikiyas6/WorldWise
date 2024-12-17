@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { BigProvider } from "./contexts/BigContext";
 import { CitiesProvider } from "./contexts/CitiesContext";
@@ -21,7 +21,7 @@ function App() {
     <BigProvider>
       <CitiesProvider>
         <AuthProvider>
-          <BrowserRouter>
+          <HashRouter>
             <Suspense fallback={<SpinnerFullPage />}>
               <Routes>
                 {/* 
@@ -53,7 +53,7 @@ function App() {
                 <Route path="*" element={<PageNotFound />} />
               </Routes>
             </Suspense>
-          </BrowserRouter>
+          </HashRouter>
         </AuthProvider>
       </CitiesProvider>
     </BigProvider>
