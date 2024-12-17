@@ -21,7 +21,7 @@ function App() {
     <BigProvider>
       <CitiesProvider>
         <AuthProvider>
-          <HashRouterr>
+          <HashRouter>
             <Suspense fallback={<SpinnerFullPage />}>
               <Routes>
                 {/* 
@@ -53,7 +53,7 @@ function App() {
                 <Route path="*" element={<PageNotFound />} />
               </Routes>
             </Suspense>
-          </HashRouterr>
+          </HashRouter>
         </AuthProvider>
       </CitiesProvider>
     </BigProvider>
