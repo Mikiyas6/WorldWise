@@ -30,7 +30,7 @@ const FAKE_USER = [
         emoji: "https://flagcdn.com/et.svg",
         date: "2024-11-12T15:59:59.138Z",
         notes:
-          "I've been and tired of coming here everyday for the past 4 years. When is it gonna end😭😭😭😭",
+          "I've been sick and tired of coming here everyday for the past 4 years. When is it gonna end😭😭😭😭",
         position: {
           lat: 9.030052740610376,
           lng: 38.762044677932224,
