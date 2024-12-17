@@ -13,7 +13,7 @@ function User() {
   if (!isAuthenticated) return;
   return (
     <div className={styles.user}>
-      <img src={`/public/${user.avatar}.jpg`} alt={user.name} />
+      <img src={`${user.avatar}.jpg`} alt={user.name} />
       <span>Welcome, {user.name}</span>
       <button onClick={handleClick}>Logout</button>
     </div>
