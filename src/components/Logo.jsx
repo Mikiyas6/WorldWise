@@ -5,7 +5,7 @@ function Logo() {
   return (
     <Link to="/">
       <img
-        src={process.env.PUBLIC_URL + "/logo.png"}
+        src={import.meta.env.BASE_URL + "logo.png"}
         alt="WorldWise logo"
         className={styles.logo}
       />{" "}
