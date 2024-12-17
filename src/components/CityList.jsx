@@ -1,4 +1,3 @@
-/* eslint-disable */
 import styles from "./CityList.module.css";
 import Spinner from "./Spinner";
 import CityItem from "./CityItem";
