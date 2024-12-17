@@ -1,11 +1,10 @@
 {
+  "homepage": "https://Mikiyas6.github.io/WorldWise/",
   "name": "worldwise",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Mikiyas6.github.io/WorldWise/",
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
