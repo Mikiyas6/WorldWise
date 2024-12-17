@@ -5,4 +5,12 @@ import eslint from "vite-plugin-eslint";
 export default defineConfig({
   plugins: [react(), eslint()],
   base: "/WorldWise/",
+  build: {
+    rollupOptions: {
+      input: {
+        main: "index.html",
+        404: "index.html",
+      },
+    },
+  },
 });
