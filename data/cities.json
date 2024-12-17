@@ -35,6 +35,18 @@
         "lat": "40.333983227838104",
         "lng": "-0.06866455078125001"
       }
+    },
+    {
+      "id": "0b6f",
+      "cityName": "Evora",
+      "country": "Portugal",
+      "emoji": "https://flagcdn.com/pt.svg",
+      "date": "2024-12-17T10:53:30.885Z",
+      "notes": "df",
+      "position": {
+        "lat": "38.58181047280238",
+        "lng": "-8.15664833141345"
+      }
     }
   ]
 }

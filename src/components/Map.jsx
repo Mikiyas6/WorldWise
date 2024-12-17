@@ -10,12 +10,13 @@ import {
 } from "react-leaflet";
 import styles from "./Map.module.css";
 import { useEffect, useState } from "react";
-import { useCities } from "../contexts/CitiesContext";
 import { useGeolocation } from "../hooks/useGeoLocation";
 import Button from "./Button";
 import { useUrlPosition } from "../hooks/useUrlPosition";
+import { useBig } from "../contexts/BigContext";
 function Map() {
-  const { cities } = useCities();
+  const { user } = useBig();
+  const { cities } = user;
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const {
     isLoading: isLoadingPosition,

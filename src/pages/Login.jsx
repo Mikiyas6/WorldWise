@@ -6,12 +6,11 @@ import { useAuth } from "../contexts/FakeAuthContext";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 export default function Login() {
-  // PRE-FILL FOR DEV PURPOSES
-  const [email, setEmail] = useState("jack@example.com");
-  const [password, setPassword] = useState("qwerty");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const { login, isAuthenticated } = useAuth();
   const navigate = useNavigate();
-  // if (isAuthenticated) navigate("/app/cities", { replace: true });
+
   useEffect(
     function () {
       if (isAuthenticated) {
@@ -35,6 +34,7 @@ export default function Login() {
             id="email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
+            placeholder="Type your email"
           />
         </div>
 
@@ -45,6 +45,7 @@ export default function Login() {
             id="password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
+            placeholder="Type your password"
           />
         </div>
 

@@ -1,0 +1,83 @@
+/* Full-page container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--color-brand--2),
+    var(--color-brand--1)
+  );
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+}
+
+/* Content box styling */
+.content {
+  text-align: center;
+  padding: 3rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Error code styling */
+.errorCode {
+  font-size: 8rem;
+  color: #ff5e57;
+  margin: 0;
+  font-weight: 900;
+  text-shadow: 2px 4px 6px rgba(255, 94, 87, 0.3);
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  color: #333333;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+/* Message styling */
+.message {
+  font-size: 1.2rem;
+  color: #666666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Button styling */
+.homeButton {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for button */
+.homeButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
