@@ -101,6 +101,18 @@ function CitiesProvider({ children }) {
       throw new Error(err.message);
     }
   }
+  // When you use useCallback, React recreates the function whenever any of the dependencies in the array change because the dependencies define the function's closure. The closure is the environment in which the function is defined, including all variables it references outside its scope.
+  //Memoization is not meant to prevent re-execution of functions with the same arguments. If you want to avoid executing the same function call repeatedly with the same arguments, you need to implement caching logic inside the function. Memoizing based on arguments is unnecessary because the React dependency array tracks values that impact function creation, not execution.
+  // ####################################################
+  //   const [count, setCount] = useState(0);
+
+  // const displayCurrentCount = useCallback(() => {
+  //   console.log(count); // Depends on the closure of `count`
+  // }, [count]);
+  // Imagine that we passed this function as a prop to a certain component. and inside that component, whenever we want to know the current count value, we call it.
+  // Here, the displayCurrentCount function "remembers" the value of count in its closure when it is created. If count changes but the function is not recreated, the function would use the old count value, which is incorrect. React ensures that the closure is up-to-date by recreating the function whenever its dependencies change.
+  // In short, If we don't recreate a function that uses state(i.e cities) in its definition by putting those states in the dependency array of the useCallback that we use to memoize the function, then if the state(cities) changes and if we call the function with a certain value (id), then it's gonna use the old cities value. But if we use cities as a dependency value, then, when cities is updated, then the function is going to be recreated, which will update the cities that we used inside of the function and we will get the desired value.
+
   const getCity = useCallback(
     async function getCity(id) {
       if (Number(id) === currentCity.id) return;
