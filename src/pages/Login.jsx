@@ -6,8 +6,8 @@ import { useAuth } from "../contexts/FakeAuthContext";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("Mikiyas.Tewodroes@a2sv.org");
+  const [password, setPassword] = useState("2222");
   const { login, isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
